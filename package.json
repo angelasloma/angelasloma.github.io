@@ -1,7 +1,7 @@
 {
-  "name": "angelasloma.github.io",
+  "name": "Angela",
   "version": "1.0.0",
-  "description": "",
+  "description": "1st webpage",
   "main": "hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/angelasloma/angelasloma.github.io.git"
   },
-  "author": "",
+  "author": "Angela Sloma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/angelasloma/angelasloma.github.io/issues"
@@ -24,5 +24,10 @@
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "react": "^16.2.0"
-  }
+  },
+  "keywords": [
+    "portfolio",
+    "cv",
+    "angelasloma"
+  ]
 }
