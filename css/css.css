@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-11-23, 21:21:45
+    Author     : Angela Słoma
+*/
+body {
+    /* Szare tło pojawiające się za "kartką" */
+    background-color: lightgray;
+}
+.container {
+    /* Kolor kartki CV */
+    background-color: #fff;
+    border-width: 49.5em;
+
+    /* height? */
+    height: auto;
+    border-style: outset;
+    border-width: thin;
+    border-color: lightgray;
+    font-family: "Tahoma";
+    font-size: 14px;
+    margin: 6em 4.68em;
+    padding: 6em 4.68em;
+
+    /* Generator cienia */
+    -webkit-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+    -moz-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+    box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+}
+
+/* Styl nadany dla głowych informacji w CV */
+.glowny-hdr {
+    background-color: rgb(39, 37, 31);
+    color: whitesmoke;
+    width: 40%;
+    height: auto;
+}
+
+/* Styl dla caption w tabeli pn. glowny-hdr */
+#profil caption {
+    padding: 20px;
+}
+
+/* Styl dla header'a w tabelach po lewej stronie "kartki" */
+#glowne, #profil, #formularz th {
+    font-family: "Arial", sans-serif;
+    font-variant: small-caps;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Styl dla wierszy w nw. tabelach */
+#glowne, #profil td {
+    font-family: "Tahoma", sans-serif;
+    font-variant: normal;
+    font-weight: 300;
+    font-size: 14px;
+    border-spacing: 5px;
+}
+
+#formularz td {
+    text-align: center;
+    border: magenta 2px solid;
+}
+
+/* styl dla wszystkich tabel po lewej stronie "kartki */
+#glowne, #profil, #formularz tr {
+    width: 100%;
+    text-align: justify;
+    border-collapse: collapse;
+    border: blue 2px dotted;
+}
+
+/* Styl dla linku w głównych informacjach, w tym dla odwiedzonego */
+#glowne a:link, a:visited {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Wygląd linku po przesunięciu kursorem */
+#glowne a:hover {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Wygląd linku aktywnego */
+#glowne a:active {
+    color: magenta;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Wygląd treści po prawej stronie "kartki" od danych osobowych*/
+.main-container {
+
+}
+
+/* Wygląd footera */ 
+.main-ftr {
+    width: 60%;
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    text-align: justify;
+}
+
+/* Wygląd boxów */
+.boxes {
+    height: 700px;
+    width: 700px;
+    background-image: ("zdjecia/papier.jpg");
+}
