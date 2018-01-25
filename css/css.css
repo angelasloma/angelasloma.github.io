@@ -47,7 +47,7 @@ body {
 
 /* Styl dla header'a w tabelach po lewej stronie "kartki" */
 #glowne, #profil, #formularz th {
-    font-family: "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-variant: small-caps;
     font-weight: 500;
     font-size: 18px;
@@ -96,10 +96,10 @@ body {
     text-decoration: none;
 }
 
-/* Wygląd treści po prawej stronie "kartki" od danych osobowych*/
+/* Wygląd treści po prawej stronie "kartki" od danych osobowych
 .main-container {
 
-}
+} */
 
 /* Wygląd footera */ 
 .main-ftr {
