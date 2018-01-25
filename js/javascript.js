@@ -1,11 +1,11 @@
 /* button formularza kontaktowego */
 <script>
     function formHide()
-    var x = document.getElementById("formShow");
-    if (x.style.display === "none") 
+    { var a = document.getElementById("formShow");
+    if (a.style.display === "none") 
     {
-        x.style.display = "block"}
+        a.style.display = "block"}
      else {
-        x.style.display = "none"}
+        a.style.display = "none"}
 }
 </script>
