@@ -14,6 +14,7 @@ body {
 .container {
     /* Kolor kartki CV */
     background-color: #fff;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
     border-width: 49.5em;
 
     /* height? */
@@ -96,6 +97,15 @@ body {
     text-decoration: none;
 }
 
+/* wygląd buttona formularza kontaktowego */
+#formShow {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
 /* Wygląd treści po prawej stronie "kartki" od danych osobowych
 .main-container {
 
@@ -112,7 +122,6 @@ body {
 
 /* Wygląd boxów */
 .boxes {
-    height: 700px;
-    width: 700px;
-    background-image: ("zdjecia/papier.jpg");
+    height: 10px;
+    width: 10px;
 }
