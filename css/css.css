@@ -32,6 +32,11 @@ body {
     -moz-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
     box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
 }
+/* wygląd ikon */
+i {
+color: lightgray; 
+}
+
 
 /* Styl nadany dla głowych informacji w CV */
 .glowny-hdr {
@@ -106,8 +111,9 @@ body {
 }
 
 /* Wygląd treści po prawej stronie "kartki" od danych osobowych
-.main-container {
-
+div main-container {
+padding:;
+margin:;
 } */
 
 h3 {
