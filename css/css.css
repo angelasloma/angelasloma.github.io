@@ -48,12 +48,12 @@ color: lightgray;
 
 /* Styl dla h1 w tabeli pn. glowny-hdr */
 .glowny-hdr caption {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
 /* Styl dla header'a w tabelach po lewej stronie "kartki" */
-#glowne, #profil, #formularz h1 {
+h1 {
     font-family: 'Alegreya Sans', sans-serif;
     font-variant: small-caps;
     font-weight: 400;
