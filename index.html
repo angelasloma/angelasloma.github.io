@@ -4,8 +4,8 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!-- określenie języka strony www -->
 <html lang="pl">
-
 <head>
     <!-- Tytuł strony -->
     <title>CV - Angela Słoma</title>
@@ -17,10 +17,11 @@ and open the template in the editor.
     <meta name="Authoring_tool" content="NetBeans IDE 8.2" />
     <!--  adres ikony strony www -->
     <link rel="Shortcut icon" href="zdjecia/CV.zdjecie.png" />
-    <!-- link do uzycia Font Awesome Icons -->
+    <!-- link do użycia Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- pobranie czcionki Open Sans - Latin + Latin Extend - 400 -->
+    <!-- pobranie czcionki Open Sans - Latin + Latin Extend - 400 - regular -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+    <!-- pobranie czcionki Alegreya Sans - Latin + Latin Extended - 300 - light -->
     <!-- połączenie z css i js -->
     <link href="css/css.css" rel="stylesheet" type="text/css" />
     <link href="JS/javascript.json" rel="stylesheet" type="text/json" />
@@ -47,10 +48,11 @@ and open the template in the editor.
             </table>
             <br>
             <table id="glowne">
-                <th>Dane kontaktowe</th>
+                Dane kontaktowe
                 <tr>
                     <td>
-                        <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania</td>
+                        <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania
+                    </td>
                     <td>ul. Głowackiego 4, 16-100 Sokółka
                     </td>
                 </tr>
@@ -84,17 +86,14 @@ and open the template in the editor.
             <br>
             <table id="formularz">
                 <th>Formularz kontaktowy</th>
-                <tr>
-                    <!-- wstawienie buttona rozwijającego formularz -->
-                    <td>
-                        <button onclick="formHide()">Rozwiń</button>
-                        <div id="formShow">
-                            tu wstaw dane
-                        </div>
-                    </td>
-                </tr>
             </table>
+            <!-- Pkt. 5 Formularz kontaktowy -->
+            <button type="button" onclick="formHide()">Rozwiń</button>
+            <div id="formShow">
+                tu wstaw dane
+            </div>
             <br>
+            <!-- "prawa" część kartki -->
             <div class="main-container">
                 <div class="boxes">
                     <tr>
@@ -105,14 +104,12 @@ and open the template in the editor.
                 <!-- Pkt. 3 Wypunktowane listy i zagnieżdżone -->
                 <!-- Pkt. 3 Wyliczeniowe listy i zagnieżdżone -->
                 <!-- Pkt. 4 Tabela zawierająca umiejętności -->
-
-                <!-- Pkt. 5 Formularz kontekstowy -->
         </header>
-        <footer class="main-ftr">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia
-            29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).
+        <!-- początek footera -->
+        <footer class="main-ftr">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dn.
+            29.08.1997 r. o Ochronie Danych Osobowych; t.j.: Dz. U. 2016 r. poz. 922).
         </footer>
         </div>
     </div>
 </body>
-
 </html>
