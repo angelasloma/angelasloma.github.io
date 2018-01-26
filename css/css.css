@@ -14,18 +14,15 @@ body {
 .container {
     /* Kolor kartki CV */
     background-color: #fff;
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
     border-width: 49.5em;
-
-    /* height? */
     height: auto;
     border-style: outset;
     border-width: thin;
     border-color: lightgray;
-    font-family: "Tahoma";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin: 6em 4.68em;
-    padding: 6em 4.68em;
+    padding: 0em;
 
     /* Generator cienia */
     -webkit-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
@@ -34,16 +31,22 @@ body {
 }
 /* wygląd ikon */
 i {
-color: lightgray; 
+    color: lightgray; 
 }
 
 
 /* Styl nadany dla głowych informacji w CV */
 .glowny-hdr {
     background-color: rgb(39, 37, 31);
+    /* tekstura czarnego tła kartki */
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/01/Black-Construction-Paper-Texture..jpg);
+    /* powtarzanie tła (kafelkowanie) - powtórzenie typu 'round' - wypełnienie likwidujące tzw. whitespace */
+    background-repeat: round;
     color: whitesmoke;
     width: 40%;
     height: auto;
+    /* pozycjonowanie .glowny-hdr ze wszystkimi danymi osobowymi - lewa strona "kartki"*/
+    float: left;
 }
 
 /* Styl dla h1 w tabeli pn. glowny-hdr */
@@ -52,16 +55,19 @@ color: lightgray;
     text-align: center;
 }
 
-/* Styl dla header'a w tabelach po lewej stronie "kartki" */
-h1 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-variant: small-caps;
-    font-weight: 400;
-    font-size: 18px;
+.formularz {
+    width: 100%;
+}
+
+/* styl dla wszystkich tabel po lewej stronie "kartki */
+.glowne, .profil tr {
+    width: 100%;
+    text-align: justify;
+
 }
 
 /* Styl dla wierszy w nw. tabelach */
-#glowne, #profil td {
+.glowne, .profil td {
     font-family: 'Open Sans', sans-serif;
     font-variant: normal;
     font-weight: 300;
@@ -69,52 +75,52 @@ h1 {
     border-spacing: 5px;
 }
 
-#formularz {
-    width: 100%;
-}
+/* Styl dla header'a w tabelach po lewej stronie "kartki" */
+#th {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: left;
 
-/* styl dla wszystkich tabel po lewej stronie "kartki */
-#glowne, #profil tr {
-    width: 100%;
-    text-align: justify;
-    border-collapse: collapse;
 }
 
 /* Styl dla linku w głównych informacjach, w tym dla odwiedzonego */
-#glowne a:link, a:visited {
+.glowne a:link, a:visited {
     color: whitesmoke;
     background-color: transparent;
     text-decoration: none;
 }
 
 /* Wygląd linku po przesunięciu kursorem */
-#glowne a:hover {
+.glowne a:hover {
     color: gray;
     background-color: transparent;
     text-decoration: none;
 }
 
 /* Wygląd linku aktywnego */
-#glowne a:active {
+.glowne a:active {
     color: magenta;
     background-color: transparent;
     text-decoration: none;
 }
 
-/* wygląd buttona formularza kontaktowego */
+/* wygląd buttona formularza kontaktowego 
 #formShow {
     width: 100%;
     padding: 50px 0;
     text-align: center;
     background-color: lightblue;
-    margin-top: 20px;
-}
+    margin-top: 20px; 
+}*/
 
-/* Wygląd treści po prawej stronie "kartki" od danych osobowych
-div main-container {
-padding:;
-margin:;
-} */
+/* Wygląd treści po prawej stronie "kartki" od danych osobowych */
+.main-container {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
+    width: 60%;
+    float: right;
+}
 
 h3 {
     font-family: 'Open Sans', sans-serif;
@@ -125,15 +131,11 @@ h3 {
 
 /* Wygląd footera */ 
 .main-ftr {
-    width: 60%;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 10px;
     text-align: justify;
-}
-
-/* Wygląd boxów */
-.boxes {
-    height: 10px;
-    width: 10px;
+    opacity: 0.75;
+    float: bottom;
 }

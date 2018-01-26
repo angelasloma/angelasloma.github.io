@@ -7,74 +7,78 @@ and open the template in the editor.
 <!-- określenie języka strony www -->
 <html lang="pl">
 
-<head>
-    <!-- Tytuł strony -->
-    <title>CV - Angela Słoma</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- określenie autora strony www-->
-    <meta name="Author" content="Angela Słoma" />
-    <!-- określenie narzędzia autorskiego -->
-    <meta name="Authoring_tool" content="NetBeans IDE 8.2" />
-    <!--  adres ikony strony www -->
-    <link rel="Shortcut icon" href="zdjecia/CV.zdjecie.png" />
-    <!-- link do użycia Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- pobranie czcionki Open Sans - Latin + Latin Extend - 400 - regular -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
-    <!-- pobranie czcionki Alegreya Sans - Latin + Latin Extended - 300 - light -->
-    <!-- połączenie z css i js -->
-    <link href="css/css.css" rel="stylesheet" type="text/css" />
-    <link href="JS/javascript.json" rel="stylesheet" type="text/json" />
-</head>
+    <head>
+        <!-- Tytuł strony -->
+        <title>CV - Angela Słoma</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- określenie autora strony www-->
+        <meta name="Author" content="Angela Słoma" />
+        <!-- określenie narzędzia autorskiego -->
+        <meta name="Authoring_tool" content="NetBeans IDE 8.2" />
+        <!--  adres ikony strony www -->
+        <link rel="Shortcut icon" href="zdjecia/CV.zdjecie.png" />
+        <!-- link do użycia Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- pobranie czcionki Open Sans - Latin + Latin Extend - 400 - regular -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+        <!-- pobranie czcionki Alegreya Sans - Latin + Latin Extended - 300 - light -->
+        <!-- połączenie z css i js -->
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+        <link href="JS/javascript.json" rel="stylesheet" type="text/json" />
+    </head>
 
-<body>
-    <div class="container">
-        <!-- Pkt. 4 Tekst - informacje główne do CV w tabeli - dane osobowe -->
-        <header class="glowny-hdr">
+    <body>
+        <div class="container">
+            <!-- Pkt. 4 Tekst - informacje główne do CV w tabeli - dane osobowe -->
+            <header class="glowny-hdr">
                 <!-- Pkt. 1 Zdjęcie -->
-                <caption>
-                    <img src="zdjecia/CV.zdjecie.png" alt="zdjęcie" width="200" height="250" title="zdjęcie" align="center" />
-                </caption>
-                <h1>Profil</h1>
-                <table id="profil">
-                <tr>
-                    <td>
-                        <span>Po zakończeniu studiów magisterskich na kierunku ekonomiczno - prawnym w Uniwersytecie w Białymstoku
-                            zostałam stażystką w Powiatowym Urzędzie Pracy w Sokółce. Do dnia dzisiejszego pracuję ww. urzędzie.
-                            Na obecną chwilę jestem także słuchaczem studiów podyplomowych pn. Aplikacje Internetowe – Front-End
-                            Development na Politechnice Białostockiej.</span>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <h1>Dane kontaktowe</h1>
-            <table id="glowne">
-                <tr>
-                    <td>
-                        <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania
-                    </td>
-                    <td>ul. Głowackiego 4, 16-100 Sokółka
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fa fa-envelope-o" style="font-size:16px"></i> E-mail</td>
-                    <td>
-                        <a href="mailto:angela.sloma@gmail.com">angela.sloma@gmail.com</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fa fa-phone" style="font-size:16px"></i> Telefon</td>
-                    <td>724 495 595</td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fa fa-linkedin" style="font-size:16px"></i> LinkedIn</td>
-                    <td>
-                        <a target="_blank" href="https://www.linkedin.com/in/angela-s%C5%82oma-476994120/">angelasloma</a>
-                    </td>
+                <table class="profil">
+                    <caption>
+                        <img src="zdjecia/CV.zdjecie.png" alt="zdjęcie" width="200" height="250" title="zdjęcie" align="center" />
+                    </caption>
+                    <tr>
+                        <th id="th">Profil</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Po zakończeniu studiów magisterskich na kierunku ekonomiczno - prawnym w Uniwersytecie w Białymstoku
+                                zostałam stażystką w Powiatowym Urzędzie Pracy w Sokółce. Do dnia dzisiejszego pracuję ww. urzędzie.
+                                Na obecną chwilę jestem także słuchaczem studiów podyplomowych pn. Aplikacje Internetowe – Front-End
+                                Development na Politechnice Białostockiej.</span>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table class="glowne">
+                    <tr>
+                        <th id="th">Dane kontaktowe</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania
+                        </td>
+                        <td>ul. Głowackiego 4, 16-100 Sokółka
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-envelope-o" style="font-size:16px"></i> E-mail</td>
+                        <td>
+                            <a href="mailto:angela.sloma@gmail.com">angela.sloma@gmail.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-phone" style="font-size:16px"></i> Telefon</td>
+                        <td>724 495 595</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-linkedin" style="font-size:16px"></i> LinkedIn</td>
+                        <td>
+                            <a target="_blank" href="https://www.linkedin.com/in/angela-s%C5%82oma-476994120/">angelasloma</a>
+                        </td>
                     <tr>
                         <td>
                             <i class="fa fa-github" style="font-size:16px"></i> Github
@@ -83,29 +87,33 @@ and open the template in the editor.
                             <a href="https://github.com/angelasloma">angelasloma</a>
                         </td>
                     </tr>
-            </table>
-            <br>
-            <h1>Formularz kontaktowy</h1>
-            <br>
-            <!-- Pkt. 5 Formularz kontaktowy -->
-            <button type="button" onclick="formHide()">Rozwiń</button>
-            <br>
+                </table>
+                <br>
+                <table class="formularz">
+                    <tr>
+                        <th id="th">Formularz kontaktowy</th>
+                    </tr>
+                </table>
+                <br>
+                <!-- Pkt. 5 Formularz kontaktowy -->
+                <button type="button" onclick="formHide()">Rozwiń</button>
+                <br>
+                <!-- Pkt. 3 Wypunktowane listy i zagnieżdżone -->
+                <!-- Pkt. 3 Wyliczeniowe listy i zagnieżdżone -->
+                <!-- Pkt. 4 Tabela zawierająca umiejętności -->
+            </header>
             <!-- "prawa" część kartki -->
             <div class="main-container">
-                <h3>Angela Słoma</h3>
-                <br>
-                <h4>słuchacz studiów podyplomowych</h4>
+                <div class="title">
+                    <h3>Angela Słoma</h3>
+                    <h4>słuchacz studiów podyplomowych</h4>
+                </div>
+                <!-- początek footera -->
+                <footer class="main-ftr">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dn.
+                    29.08.1997 r. o Ochronie Danych Osobowych; t.j.: Dz. U. 2016 r. poz. 922).
+                </footer>
             </div>
-            <!-- Pkt. 3 Wypunktowane listy i zagnieżdżone -->
-            <!-- Pkt. 3 Wyliczeniowe listy i zagnieżdżone -->
-            <!-- Pkt. 4 Tabela zawierająca umiejętności -->
-        </header>
-        <!-- początek footera -->
-        <footer class="main-ftr">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dn.
-            29.08.1997 r. o Ochronie Danych Osobowych; t.j.: Dz. U. 2016 r. poz. 922).
-        </footer>
-    </div>
-    </div>
-</body>
+        </div>
+    </body>
 
 </html>
