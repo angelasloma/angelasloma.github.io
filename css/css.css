@@ -49,7 +49,7 @@ color: lightgray;
 /* Styl dla h1 w tabeli pn. glowny-hdr */
 #profil h1 {
     padding: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 /* Styl dla header'a w tabelach po lewej stronie "kartki" */
