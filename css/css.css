@@ -41,13 +41,14 @@ body {
     height: auto;
 }
 
-/* Styl dla caption w tabeli pn. glowny-hdr */
-#profil caption {
+/* Styl dla h1 w tabeli pn. glowny-hdr */
+#profil h1 {
     padding: 20px;
+    text-align: justify;
 }
 
 /* Styl dla header'a w tabelach po lewej stronie "kartki" */
-#glowne, #profil, #formularz th {
+#glowne, #profil, #formularz h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-variant: small-caps;
     font-weight: 400;
@@ -63,9 +64,8 @@ body {
     border-spacing: 5px;
 }
 
-#formularz td {
+#formularz {
     width: 100%;
-    border: magenta 2px solid;
 }
 
 /* styl dla wszystkich tabel po lewej stronie "kartki */
@@ -109,6 +109,13 @@ body {
 .main-container {
 
 } */
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    text-align: left;
+}
 
 /* Wygląd footera */ 
 .main-ftr {
