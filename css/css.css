@@ -50,14 +50,25 @@ i {
     float: left;
 }
 
-/* Styl dla h1 w tabeli pn. glowny-hdr */
-.glowny-hdr caption {
-    padding: 40px;
-    text-align: center;
+/* styl dla tabel po lewej stronie */
+.glowne, .profil, .formularz {
+    margin: 20px;
 }
 
+/* Styl dla zdjęcia w CV */
+.profil caption {
+    padding: 25px;
+}
+
+/* zastosowanie wcięcia w opisie profilu kandydata */
+#opis {
+    text-indent: 50px;
+}
+
+/* ogólny styl dla formularza */
 .formularz {
     width: 100%;
+    text-align: center;
 }
 
 /* styl dla wszystkich tabel po lewej stronie "kartki */
@@ -138,6 +149,7 @@ hr {
 
 /* wygląd tytułowych danych (imię i nazwisko, rola) */
 .title {
+    margin-left: 25px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     text-align: left;
@@ -162,6 +174,7 @@ h3 {
 .main-ftr {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
+    /* zastosowanie kursywy */
     font-style: italic;
     font-size: 10px;
     text-align: justify;
