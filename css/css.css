@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 2017-11-23, 21:21:45
     Author     : Angela Słoma
 */
+
 body {
     /* Szare tło pojawiające się za "kartką" */
     background-color: lightgray;
@@ -30,11 +31,16 @@ body {
     box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
 }
 
-/* wygląd ikon */
-i {
-    color: lightgray; 
+/* styl dla danych  osobowych w <td> po prawej stronie */
+.dane {
+    font-size: 15px;
 }
 
+/* wygląd ikon */
+i {
+    margin: 10px;
+    color: lightgray; 
+}
 
 /* Styl nadany dla głowych informacji w CV */
 .glowny-hdr {
@@ -58,17 +64,14 @@ i {
 /* Styl dla zdjęcia w CV */
 .profil caption {
     padding: 25px;
+    /* Skalowanie zdjęcia dla dostosowania odpowiedniego aspektu ratio */
+    object-fit: contain;
 }
 
 /* zastosowanie wcięcia w opisie profilu kandydata */
 #opis {
     text-indent: 50px;
-}
-
-/* ogólny styl dla formularza */
-.formularz {
-    width: 100%;
-    text-align: center;
+    line-height: 1.5;
 }
 
 /* styl dla wszystkich tabel po lewej stronie "kartki */
@@ -77,14 +80,14 @@ i {
     text-align: justify;
 }
 
-
 /* Styl dla wierszy w nw. tabelach */
 .glowne, .profil td {
     font-family: 'Open Sans', sans-serif;
     font-variant: normal;
-    font-weight: 300;
     font-size: 14px;
-    border-spacing: 5px;
+    font-weight: 300;
+    border-spacing: 7px;
+    line-height: 1.6;
 }
 
 /* Styl dla header'a w tabelach po lewej stronie "kartki" */
@@ -92,9 +95,9 @@ i {
     font-family: 'Alegreya Sans', sans-serif;
     font-variant: small-caps;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 24px;
     text-align: left;
-
+    line-height: 2.5;
 }
 
 /* Styl dla linku w głównych informacjach, w tym dla odwiedzonego */
@@ -109,6 +112,7 @@ i {
     color: gray;
     background-color: transparent;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Wygląd linku aktywnego */
@@ -118,29 +122,32 @@ i {
     text-decoration: none;
 }
 
-/* Wygląd linii do th */
-hr {
-    border: 0px; 
-    height: 1px; 
+/* ogólny styl dla formularza */
+.formularz {
     width: 100%;
-    /* generator linii z efektem gradientu */
-    background-image: -webkit-linear-gradient(left, transparent, #8c8b8b, transparent);
-    background-image: -moz-linear-gradient(left, transparent, #8c8b8b, transparent);
-    background-image: -ms-linear-gradient(left, transparent, #8c8b8b, transparent);
-    background-image: -o-linear-gradient(left, transparent, #8c8b8b, transparent); 
+    text-align: center;
 }
 
-/* wygląd buttona formularza kontaktowego 
-#formShow {
-    width: 100%;
-    padding: 50px 0;
+/* wygląd buttona odsłaniający formularz */
+#myBtn {
+    width: 200px;
+    height: 35px;
+    border: none;
+    background-color: lightgrey;
+    color: black;
     text-align: center;
-    background-color: lightblue;
-    margin-top: 20px; 
-}*/
+    text-decoration: none;
+    font-size: 14px;
+}
 
-/* Wygląd treści po prawej stronie "kartki" od danych osobowych */
-.main-container {
+/* wygląd buttona odsłaniający formularz */
+#myBtn:hover {
+    background-color: grey;
+    color: black;
+}
+
+.glowny-container {
+    padding: 25px;
     background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
     height: auto;
     width: 60%;
@@ -148,7 +155,7 @@ hr {
 }
 
 /* wygląd tytułowych danych (imię i nazwisko, rola) */
-.title {
+.tytul {
     margin-left: 25px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -170,16 +177,47 @@ h3 {
     font-size: 18px;
 }
 
-/* Wygląd footera */ 
-.main-ftr {
+/* klasa .doswiadczenie znajdująca sie pod klasą .tytul, po prawej str. "kartki */
+.doswiadczenie {
+    margin: 25px;
+}
+
+/* tabela z informacjami o umiejetnościach */
+#umiejetnosci {
     width: 100%;
+    line-height: 2.5;
+}
+
+/* wygląd wierszy tabel w klasie .doswiadczenie */
+#umiejetnosci td {
+    width: 50%;
+}
+
+/* wygląd subtytułów w tabelach znajdujących się w klasie .doświadczenie */
+#subtytuly {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* wygląd klauzuli na końcu CV */
+#klauzula {
+    padding: 20px;
+}
+
+/* Wygląd footera */ 
+.glowny-ftr {
+    width: 100%;
+    height: auto;
     font-family: 'Open Sans', sans-serif;
     /* zastosowanie kursywy */
     font-style: italic;
     font-size: 10px;
     text-align: justify;
-    /* odstęp między liniami tekstu */
     line-height: 1.75;
     opacity: 0.75;
     float: bottom;
 }
+
+/* "skrócić"" kod dot. ustawień związanych z font */

@@ -23,9 +23,12 @@ and open the template in the editor.
         <!-- pobranie czcionki Open Sans - Latin + Latin Extend - 400 - regular -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
         <!-- pobranie czcionki Alegreya Sans - Latin + Latin Extended - 300 - light -->
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&amp;subset=latin-ext" rel="stylesheet">
+        <!-- pobranie stylesheet dla progress bar w tabeli "umiejętności" -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- połączenie z css i js -->
         <link href="css/css.css" rel="stylesheet" type="text/css" />
-        <script src="js/javascript.js" rel="stylesheet" type="text/javascript"></script>
+        <script src="JS/javascript.js"></script>
     </head>
 
     <body>
@@ -49,81 +52,175 @@ and open the template in the editor.
                         </td>
                     </tr>
                 </table>
-                <br>
                 <table class="glowne">
                     <tr>
-                        <th id="th">Dane kontaktowe</th><hr>
+                        <th id="th">Dane kontaktowe</th>
                     </tr>
                     <tr>
                         <td>
                             <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania
                         </td>
-                        <td>ul. Głowackiego 4, 16-100 Sokółka
+                        <td class="dane">ul. Głowackiego 4, 16-100 Sokółka
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <i class="fa fa-envelope-o" style="font-size:16px"></i> E-mail
                         </td>
-                        <td>
+                        <td class="dane">
                             <a href="mailto:angela.sloma@gmail.com">angela.sloma@gmail.com</a>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <i class="fa fa-phone" style="font-size:16px"></i> Telefon</td>
-                        <td>724 495 595</td>
+                        <td class="dane">724 495 595</td>
                     </tr>
                     <tr>
                         <td>
                             <i class="fa fa-linkedin" style="font-size:16px"></i> LinkedIn</td>
-                        <td>
+                        <td class="dane">
                             <a target="_blank" href="https://www.linkedin.com/in/angela-s%C5%82oma-476994120/">angelasloma</a>
                         </td>
                     <tr>
                         <td>
                             <i class="fa fa-github" style="font-size:16px"></i> Github
                         </td>
-                        <td>
+                        <td class="dane">
                             <a href="https://github.com/angelasloma">angelasloma</a>
                         </td>
                     </tr>
                 </table>
-                <br>
+                <!-- Pkt. 5 Formularz kontaktowy -->
                 <table class="formularz">
                     <tr>
-                        <th id="th">Formularz kontaktowy</th>
+                        <td id="th">Formularz kontaktowy</td>
                     </tr>
                     <tr>
                         <td>
-                            <button type="button" onclick="myFunction()">Rozwiń</button>
+                            <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
                         </td>
+                    </tr>
+                    <tr><td>
+                            <!--  gropowanie podobnych danych w jednym formularzu -->
+                            <fieldset>
+                                <!-- "_self", gdzie wartość formularza zostaje wprowadzona w bieżącym oknie; 
+                            metoda "post" by ukryć wartości w url wprowadzone przez użytkownika -->
+                                <form action="/action_page.php" target="_self" method="POST">
+                                    Imię:<br>
+                                    <input type="text" name="imie">
+                                    <br>
+                                    Nazwisko:<br>
+                                    <input type="text" name="nazwisko">
+                                    <br><br>
+                                    <input type="submit" value="Submit">
+                                    </fieldset>
+                                </form>
+                        </td></tr>
                     </tr>
                 </table>
                 <br>
-                <!-- Pkt. 5 Formularz kontaktowy -->
                 <!-- Pkt. 3 Wypunktowane listy i zagnieżdżone -->
                 <!-- Pkt. 3 Wyliczeniowe listy i zagnieżdżone -->
-                <!-- Pkt. 4 Tabela zawierająca umiejętności -->
             </header>
             <!-- "prawa" część kartki -->
-            <div class="main-container">
-                <div class="title">
+            <div class="glowny-container">
+                <div class="tytul">
                     <h2>Angela Słoma</h2>
                     <h3>słuchacz studiów podyplomowych</h3>
                 </div>
-                <div class="umiejetnosci">
+                <!-- Pkt. 4 Tabela zawierająca umiejętności -->
+                <div class="doswiadczenie">
+                    <table id="umiejetnosci">
+                        <tr>
+                            <th id="th">Umiejętności</th>
+                        </tr>
+
+                        <tr id="subtytuly">
+                            <td>Języki programowania</td>
+                        </tr>
+                        <tr><td>
+                                <b>HTML5 / CSS3</b> - w trakcie nauki
+                            </td>
+                            <td>
+                                <b>JavaScript</b> - w trakcie nauki
+                            </td>
+                            <td>
+                                <b>SQL</b> -  w trakcie nauki
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="subtytuly">
+                            <td>Platformy UX</td>
+                        </tr>
+                        <tr><td>
+                                <b>UXPin</b> - poziom podstawowy
+                            </td>
+                            <td>
+                                <b>Axure</b> - poziom podstawowy
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="subtytuly">
+                            <td>Języki obce</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Język angielski</b> - poziom C1 w mowie i w piśmie
+                            </td>
+                            <td><b>Język niemiecki</b> - poziom A2 w mowie i w piśmie
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:83%" width="200"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="w3-white w3-round-large" style="width:200px">
+                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <!-- początek footera -->
-                <footer class="main-ftr">
-                    <table>
-                        <tr>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dn.
-                            29.08.1997 r. o Ochronie Danych Osobowych; t.j.: Dz. U. 2016 r. poz. 922).
-                        </tr>
+                <footer class="glowny-ftr">
+                    <table id="klauzula">
+                        <tr><td>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dn.
+                                29.08.1997 r. o Ochronie Danych Osobowych; t.j.: Dz. U. 2016 r. poz. 922).
+                            </td></tr>
                     </table>
                 </footer>
             </div>
         </div>
     </body>
-
 </html>
