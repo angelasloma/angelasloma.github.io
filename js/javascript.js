@@ -4,6 +4,23 @@
  * and open the template in the editor.
  */
 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
+/* odkrycie formularzu kontaktowego */
+function Show() {
+    var x = document.getElementById("form1");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+/* walidacja checkboxu */
+function checkFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+    if (checkBox.checked === true) {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
 }

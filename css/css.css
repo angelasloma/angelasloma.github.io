@@ -8,216 +8,183 @@ and open the template in the editor.
     Author     : Angela Słoma
 */
 
-body {
-    /* Szare tło pojawiające się za "kartką" */
-    background-color: lightgray;
+/* Szare tło pojawiające się za "kartką" */
+body { background-color: rgb(217,217,214);}
 
-}
-.container {
-    /* Kolor kartki CV */
-    background-color: #fff;
-    border-width: 49.5em;
-    height: auto;
-    border-style: outset;
-    border-width: thin;
-    border-color: lightgray;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin: 6em 4.68em;
-    padding: 0em;
-    /* Generator cienia */
-    -webkit-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
-    -moz-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
-    box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
-}
+h2 { font-size: 36px; }
 
-/* styl dla danych  osobowych w <td> po prawej stronie */
-.dane {
-    font-size: 15px;
-}
+h3 { font-size: 18px; }
 
-/* wygląd ikon */
-i {
-    margin: 10px;
-    color: lightgray; 
-}
+i { color: rgb(217,217,214); margin: 10px; }
 
-/* Styl nadany dla głowych informacji w CV */
-.glowny-hdr {
-    background-color: rgb(39, 37, 31);
-    /* tekstura czarnego tła kartki */
-    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/01/Black-Construction-Paper-Texture..jpg);
-    /* powtarzanie tła (kafelkowanie) - powtórzenie typu 'round' - wypełnienie likwidujące tzw. whitespace */
-    background-repeat: round;
-    color: whitesmoke;
-    width: 40%;
-    height: auto;
-    /* pozycjonowanie .glowny-hdr ze wszystkimi danymi osobowymi - lewa strona "kartki"*/
-    float: left;
-}
+/* wcięcie tekstu w .profil */
+p { line-height: 1.6; text-indent: 50px; }
 
-/* styl dla tabel po lewej stronie */
-.glowne, .profil, .formularz {
-    margin: 20px;
-}
-
-/* Styl dla zdjęcia w CV */
-.profil caption {
-    padding: 25px;
-    /* Skalowanie zdjęcia dla dostosowania odpowiedniego aspektu ratio */
-    object-fit: contain;
-}
-
-/* zastosowanie wcięcia w opisie profilu kandydata */
-#opis {
-    text-indent: 50px;
-    line-height: 1.5;
-}
-
-/* styl dla wszystkich tabel po lewej stronie "kartki */
-.glowne, .profil tr {
-    width: 100%;
-    text-align: justify;
-}
-
-/* Styl dla wierszy w nw. tabelach */
-.glowne, .profil td {
-    font-family: 'Open Sans', sans-serif;
-    font-variant: normal;
-    font-size: 14px;
-    font-weight: 300;
-    border-spacing: 7px;
-    line-height: 1.6;
-}
-
-/* Styl dla header'a w tabelach po lewej stronie "kartki" */
-#th {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-variant: small-caps;
-    font-weight: 400;
-    font-size: 24px;
+th {
+    font: small-caps 600 26px/2.5 Alegreya Sans, sans-serif;
+    letter-spacing: 4px;
     text-align: left;
-    line-height: 2.5;
 }
 
-/* Styl dla linku w głównych informacjach, w tym dla odwiedzonego */
-.glowne a:link, a:visited {
-    color: whitesmoke;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-/* Wygląd linku po przesunięciu kursorem */
-.glowne a:hover {
-    color: gray;
-    background-color: transparent;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Wygląd linku aktywnego */
 .glowne a:active {
     color: magenta;
     background-color: transparent;
     text-decoration: none;
 }
 
-/* ogólny styl dla formularza */
-.formularz {
-    width: 100%;
-    text-align: center;
+.glowne a:hover {
+    background-color: transparent;
+    color: rgb(85,89,93);
+    cursor: pointer;
+    text-decoration: none;
 }
 
-/* wygląd buttona odsłaniający formularz */
-#myBtn {
-    width: 200px;
-    height: 35px;
+/* styl dla linku w danych kontaktowych / link odwiedzony */
+.glowne a:link, a:visited {
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#checkform:hover { background-color: grey; color: black; }
+
+/* wygląd buttona odsłaniającego formularz */
+#checkform {
+    background-color: rgb(217,217,214);
     border: none;
-    background-color: lightgrey;
     color: black;
+    cursor: pointer;
+    font-size: 14px;
+    height: 35px;
+    width: 150px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
 }
 
-/* wygląd buttona odsłaniający formularz */
-#myBtn:hover {
-    background-color: grey;
-    color: black;
+.praca ol {
+    list-style-position: outside;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
 }
 
-.glowny-container {
-    padding: 25px;
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
-    height: auto;
-    width: 60%;
-    float: right;
+/* Styl dla zdjęcia w CV */
+.profil caption { /* Skalowanie zdjęcia - aspekt ratio */ object-fit: contain;}
+
+input[type=text]:focus, input[type=number]:focus { border: 3px solid #555; background-color: rgb(217,217,214); }
+
+input[type=text], input[type=number] {
+    border: 1px solid rgb(85,89,93);
+    /* zaokrąglenie boxa */
+    border-radius: 2px;
+    /* włączenie paddingu i boardera w input (inaczej niż w property-box)*/
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 5px 10px;
+    outline: none;
+    transition: 0.25s;
+    /* czas efekt przejścia (transition) efektu */
+    -webkit-transition: 0.25s;
 }
 
-/* wygląd tytułowych danych (imię i nazwisko, rola) */
+input[type=number] { width: 150px;}
+
+input[type=text] { width: 310px; }
+
+/* styl dla danych osobowych w <td> po prawej stronie */
+.dane { font-size: 16px; }
+
+/* wygląd td w tabelach w klasie .doświadczenie */
+#subtytuly {
+    font: small-caps 500 20px/2.5 Alegreya Sans, sans-serif;
+    letter-spacing: 3px;
+}
+
+.praca td { padding: 10px; text-align: left; vertical-align: top }
+
+/* styl dla wierszy w nw. tabelach */
+.formularz, .glowne, .profil td {
+    border-spacing: 7px;
+    font: normal 300 14px/1.6 Open Sans, sans-serif;
+}
+
+#umiejetnosci td { width: 50%; }
+
+#klauzula { padding: 20px; }
+
+.praca ol li { margin-left: 20px; }
+
+#b { border-left: 1px solid rgb(85,89,93); }
+
+.praca { border-collapse: collapse; width: 100%; }
+
+ul.kolo { list-style-type: square; }
+
+#data { text-align: center; word-spacing: 5px; }
+
+/* wygląd tabeli w klasie .doświadczenie */
+#umiejetnosci { line-height: 2.0; width: 100%; }
+
+#stanowisko { font-size: 16px; font-weight: 600; }
+
+/* styl dla drugiego stopnia zagnieżdzonej listy  */
+#zakladpracy { font-style: italic; list-style-type: none; }
+
+/* (imię i nazwisko, rola) */
 .tytul {
-    margin-left: 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
+    font: small-caps normal Open Sans, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 5px;
     text-align: left;
     /* zmiana tekstu na kapitaliki */
     text-transform: uppercase;
-    letter-spacing: 5px;
-    /* odstęp między wierszami */
-    line-height: 1.25;
 }
 
-/* imię i nazwisko */
-h2 {
-    font-size: 36px;
-}
+/* styl dla tabel po lewej stronie */
+.formularz, .glowne, .profil { text-align: justify; width: 100%;}
 
-/* wypisana rola pod imieniem i nazwiskiem */
-h3 {
-    font-size: 18px;
-}
-
-/* klasa .doswiadczenie znajdująca sie pod klasą .tytul, po prawej str. "kartki */
-.doswiadczenie {
-    margin: 25px;
-}
-
-/* tabela z informacjami o umiejetnościach */
-#umiejetnosci {
-    width: 100%;
-    line-height: 2.5;
-}
-
-/* wygląd wierszy tabel w klasie .doswiadczenie */
-#umiejetnosci td {
-    width: 50%;
-}
-
-/* wygląd subtytułów w tabelach znajdujących się w klasie .doświadczenie */
-#subtytuly {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-variant: small-caps;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-/* wygląd klauzuli na końcu CV */
-#klauzula {
-    padding: 20px;
-}
-
-/* Wygląd footera */ 
 .glowny-ftr {
-    width: 100%;
-    height: auto;
-    font-family: 'Open Sans', sans-serif;
-    /* zastosowanie kursywy */
-    font-style: italic;
-    font-size: 10px;
-    text-align: justify;
-    line-height: 1.75;
-    opacity: 0.75;
     float: bottom;
+    /* font-style, font-style, font-weight, font-size/line-height, font-family */
+    font: italic normal 10px/1.75 Open Sans, sans-serif;
+    height: auto;
+    opacity: 0.75;
+    text-align: justify;
+    width: 100%;
 }
 
-/* "skrócić"" kod dot. ustawień związanych z font */
+/* wygląd dla divów i tabel po obu stronach "kartki" */ 
+.lewy-container, .prawy-container { margin: 10px; padding: 20px; }
+
+/* wygląd divów - prawej strony "kartki" */
+.glowny-container {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
+    float: right;
+    height: auto;
+    width: 60%;
+}
+
+/* styl nadany dla głowych informacji w CV */
+.glowny-hdr {
+    /* tekstura czarnego tła kartki w url + kafelkowanie typu round likwidujące whitespace */
+    background: rgb(39, 37, 31) url(https://images.freecreatives.com/wp-content/uploads/2016/01/Black-Construction-Paper-Texture..jpg) round left top;
+    color: whitesmoke;
+    /* pozycjonowanie */
+    float: left;
+    height: auto;
+    width: 40%;
+}
+
+.container {
+    /* kolor kartki */
+    background-color: #fff;
+    /* border: border-width, border-style, corder-color */ 
+    border: thin outset rgb(217,217,214);
+    font: 14px/1.6 Open Sans, sans-serif;
+    height: auto;
+    margin: 6em 4.68em;
+    /* Generator cienia */
+    box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+    -moz-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+    -webkit-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+}

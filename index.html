@@ -16,6 +16,8 @@ and open the template in the editor.
         <meta name="Author" content="Angela Słoma" />
         <!-- określenie narzędzia autorskiego -->
         <meta name="Authoring_tool" content="NetBeans IDE 8.2" />
+        <!-- Opis strony www-->
+        <meta name="description" content="Curriculum vitae Angeli Słoma">
         <!--  adres ikony strony www -->
         <link rel="Shortcut icon" href="zdjecia/CV.zdjecie.png" />
         <!-- link do użycia Font Awesome Icons -->
@@ -36,181 +38,237 @@ and open the template in the editor.
             <!-- Pkt. 4 Tekst - informacje główne do CV w tabeli - dane osobowe -->
             <header class="glowny-hdr">
                 <!-- Pkt. 1 Zdjęcie -->
-                <table class="profil">
-                    <caption>
-                        <img src="zdjecia/CV.zdjecie.png" alt="zdjęcie" width="200" height="250" title="zdjęcie" align="center" />
-                    </caption>
-                    <tr>
-                        <th id="th">Profil</th>
-                    </tr>
-                    <tr>
-                        <td id="opis">
-                            <span>Po zakończeniu studiów magisterskich na kierunku ekonomiczno - prawnym w Uniwersytecie w Białymstoku
-                                zostałam stażystką w Powiatowym Urzędzie Pracy w Sokółce. Do dnia dzisiejszego pracuję ww. urzędzie.
-                                Na obecną chwilę jestem także słuchaczem studiów podyplomowych pn. Aplikacje Internetowe – Front-End
-                                Development na Politechnice Białostockiej.</span>
-                        </td>
-                    </tr>
-                </table>
-                <table class="glowne">
-                    <tr>
-                        <th id="th">Dane kontaktowe</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania
-                        </td>
-                        <td class="dane">ul. Głowackiego 4, 16-100 Sokółka
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-envelope-o" style="font-size:16px"></i> E-mail
-                        </td>
-                        <td class="dane">
-                            <a href="mailto:angela.sloma@gmail.com">angela.sloma@gmail.com</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-phone" style="font-size:16px"></i> Telefon</td>
-                        <td class="dane">724 495 595</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-linkedin" style="font-size:16px"></i> LinkedIn</td>
-                        <td class="dane">
-                            <a target="_blank" href="https://www.linkedin.com/in/angela-s%C5%82oma-476994120/">angelasloma</a>
-                        </td>
-                    <tr>
-                        <td>
-                            <i class="fa fa-github" style="font-size:16px"></i> Github
-                        </td>
-                        <td class="dane">
-                            <a href="https://github.com/angelasloma">angelasloma</a>
-                        </td>
-                    </tr>
-                </table>
-                <!-- Pkt. 5 Formularz kontaktowy -->
-                <table class="formularz">
-                    <tr>
-                        <td id="th">Formularz kontaktowy</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
-                        </td>
-                    </tr>
-                    <tr><td>
-                            <!--  gropowanie podobnych danych w jednym formularzu -->
-                            <fieldset>
-                                <!-- "_self", gdzie wartość formularza zostaje wprowadzona w bieżącym oknie; 
-                            metoda "post" by ukryć wartości w url wprowadzone przez użytkownika -->
-                                <form action="/action_page.php" target="_self" method="POST">
-                                    Imię:<br>
-                                    <input type="text" name="imie">
-                                    <br>
-                                    Nazwisko:<br>
-                                    <input type="text" name="nazwisko">
-                                    <br><br>
-                                    <input type="submit" value="Submit">
-                                    </fieldset>
-                                </form>
-                        </td></tr>
-                    </tr>
-                </table>
-                <br>
-                <!-- Pkt. 3 Wypunktowane listy i zagnieżdżone -->
-                <!-- Pkt. 3 Wyliczeniowe listy i zagnieżdżone -->
-            </header>
-            <!-- "prawa" część kartki -->
-            <div class="glowny-container">
-                <div class="tytul">
-                    <h2>Angela Słoma</h2>
-                    <h3>słuchacz studiów podyplomowych</h3>
-                </div>
-                <!-- Pkt. 4 Tabela zawierająca umiejętności -->
-                <div class="doswiadczenie">
-                    <table id="umiejetnosci">
+                <div class="lewy-container">
+                    <table class="profil">
+                        <caption>
+                            <img src="zdjecia/CV.zdjecie.png" alt="zdjęcie" width="200" height="250" title="zdjęcie"/>
+                        </caption>
                         <tr>
-                            <th id="th">Umiejętności</th>
-                        </tr>
-
-                        <tr id="subtytuly">
-                            <td>Języki programowania</td>
-                        </tr>
-                        <tr><td>
-                                <b>HTML5 / CSS3</b> - w trakcie nauki
-                            </td>
-                            <td>
-                                <b>JavaScript</b> - w trakcie nauki
-                            </td>
-                            <td>
-                                <b>SQL</b> -  w trakcie nauki
-                            </td>
+                            <th>Profil</th>
                         </tr>
                         <tr>
                             <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr id="subtytuly">
-                            <td>Platformy UX</td>
-                        </tr>
-                        <tr><td>
-                                <b>UXPin</b> - poziom podstawowy
-                            </td>
-                            <td>
-                                <b>Axure</b> - poziom podstawowy
-                            </td>
-                        </tr>
-                        <tr >
-                            <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr id="subtytuly">
-                            <td>Języki obce</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b>Język angielski</b> - poziom C1 w mowie i w piśmie
-                            </td>
-                            <td><b>Język niemiecki</b> - poziom A2 w mowie i w piśmie
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:83%" width="200"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="w3-white w3-round-large" style="width:200px">
-                                    <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
-                                </div>
+                                <p>Po zakończeniu studiów magisterskich na kierunku ekonomiczno - prawnym w Uniwersytecie w Białymstoku
+                                    zostałam stażystką w Powiatowym Urzędzie Pracy w Sokółce.
+                                    Aktualnie nie tylko pracuję w ww. urzędzie, ale także jestem słuchaczem studiów podyplomowych pn. Aplikacje Internetowe – Front-End
+                                    Development na Politechnice Białostockiej.</p>
                             </td>
                         </tr>
                     </table>
+                    <br>
+                    <table class="glowne">
+                        <tr>
+                            <th>Dane kontaktowe</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania
+                            </td>
+                            <td class="dane">ul. Głowackiego 164 m. 25,
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dane">16-100 Sokółka</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fa fa-envelope-o" style="font-size:16px"></i> E-mail
+                            </td>
+                            <td class="dane">
+                                <a href="mailto:angela.sloma@gmail.com">angela.sloma@gmail.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fa fa-phone" style="font-size:16px"></i> Telefon</td>
+                            <td class="dane">724 495 595</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fa fa-linkedin" style="font-size:16px"></i> LinkedIn</td>
+                            <td class="dane">
+                                <a target="_blank" href="https://www.linkedin.com/in/angela-s%C5%82oma-476994120/">angelasloma</a>
+                            </td>
+                        <tr>
+                            <td>
+                                <i class="fa fa-github" style="font-size:16px"></i> Github
+                            </td>
+                            <td class="dane">
+                                <a href="https://github.com/angelasloma">angelasloma</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <!-- Pkt. 5 Formularz kontaktowy -->
+                    <table class="formularz">
+                        <tr>
+                            <th>Formularz kontaktowy</th>
+                        </tr>
+                        <tr><td><button onclick="Show()" id="btnForm">Wypełnij</button>
+                                <div id="Div">
+                                    <!-- "_self", gdzie wartość formularza zostaje wprowadzona w bieżącym oknie; 
+                        metoda "post" by ukryć wartości w url wprowadzone przez użytkownika -->
+                                    <table id="form1" style="display:none;">
+                                        <tbody>
+                                        <form action="/action_page.php" target="_self" method="POST">
+                                            <tr><td><input type="text" name="imie" id="inputfield" placeholder="Imię" required></td>
+                                                <td></td></tr>
+                                            <tr><td><input type="text" name="nazwisko" id="inputfield" placeholder="Nazwisko" required></td>
+                                                <td></td></tr>
+                                            <tr><td><input type="text" name="ulica" id="inputfield" placeholder="Ulica" required></td>
+                                                <td></td></tr>
+                                            <tr><td><input type="number" id="inputfield" name="nr domu" min="1" max="200" placeholder="Nr domu" required> / <input type="number" id="inputfield" name="Nr mieszkania" min="1" max="600" placeholder="Nr mieszkania" required></td>
+                                                <td></td></tr>
+                                            <tr><td><input type="number" id="inputfield" name="kodp" min="10" max="99" placeholder="Kod" required> - <input type="number" id="inputfield" name="kodp" min="100" max="999" placeholder="pocztowy" required></td>
+                                                <td></td></tr>
+                                            <tr><td><input type="text" name="miasto" id="miasto" placeholder="Miasto" required></td>
+                                                <td></td></tr>
+                                            </tbody>
+                                            <tfooter>
+                                                <tr><td>
+                                                        <label><input type="checkbox" id="myCheck" onclick="checkFunction()"> Wyrażam zgodę na otrzymywanie newslettera drogą elektroniczną.
+                                                            </input></label></td>
+                                                    <td><p id="text" style="display:none"<i class="fa fa-check-square" style="font-size:16px"></p></tr>
+                                                <tr><td><!-- tu wstaw kolejny button --></td>
+                                                    <td><button type="button" id="checkform" onclick="Wyslij()">Wyślij</button></table>
+                                                    </td></tr>
+                                            </tfooter></form>
+                                </div></td>
+                        </tr>
+                    </table>
+                </div>
+            </header>
+            <!-- "prawa" część kartki -->
+            <div class="glowny-container">
+                <div class="prawy-container">
+                    <div class="tytul">
+                        <h2>Angela Słoma</h2>
+                        <h3>słuchacz studiów podyplomowych</h3>
+                    </div>
+                    <!-- Pkt. 3 Wypunktowane, wyliczeniowe i zagniezdzone listy -->
+                    <div class="doswiadczenie">
+                        <table class="praca">
+                            <tr>
+                                <th>Doświadczenie</th>
+                            </tr>
+                            <tr>
+                                <td id="data">10.2017 - nadal</td>
+                                <td id="b"><ol><li id="stanowisko">Pracownik administracyjny</li>
+                                        <ul><li id="zakladpracy">Powiatowy Urząd Pracy w Sokółce</li>
+                                            <ul class="kolo">
+                                                <li>obsługa programu Syriusz Std</li>
+                                                <li>prowadzenie akt i przygotowywanie dokumentów do archiwum</li>
+                                                <li>przygotowywanie i wysyłanie korespondencji</li>
+                                            </ul></ul></ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="data">04.2017 – 09.2017</td>
+                                <td id="b"><ol><li id="stanowisko">Pomoc administracyjna</li>
+                                        <ul><li id="zakladpracy">Powiatowy Urząd Pracy w Sokółce</li>
+                                            <ul class="kolo">
+                                                <li>obsługa programu Syriusz Std</li>
+                                                <li>prowadzenie ksiąg rachunkowych</li>
+                                                <li>naliczanie i ewidencjonowanie płac i operacji finansowych
+                                                </li>
+                                            </ul></ul></ol>
+                                </td>
+                            </tr>
+                            <td id="data">10.2016 - 04.2017</td>
+                            <td id="b"><ol><li id="stanowisko">Referent ds. obsługi sekretariatu</li>
+                                    <ul><li id="zakladpracy">Powiatowy Urząd Pracy w Sokółce</li>
+                                        <ul class="kolo">
+                                            <li>obsługa urządzeń biurowych</li>
+                                            <li>ewidencjonowanie korespondencji</li>
+                                            <li>prowadzenie dziennika korespondencyjnego</li>
+                                            <li>przyjmowanie interesantów</li>
+                                            <li>przygotowywanie i wysyłanie poczty</li>
+                                        </ul></ul></ol>
+                            </td></tr>
+                        </table>
+                        <br>
+                        <!-- Pkt. 4 Tabela zawierająca umiejętności -->
+                        <table id="umiejetnosci">
+                            <tr>
+                                <th>Umiejętności</th>
+                            </tr>
+                            <tr id="subtytuly">
+                                <td>Języki programowania</td>
+                            </tr>
+                            <tr><td>
+                                    <strong>HTML5 / CSS3</strong> - w trakcie nauki
+                                </td>
+                                <td>
+                                    <strong>JavaScript</strong> - w trakcie nauki
+                                </td>
+                                <td>
+                                    <strong>SQL</strong> -  w trakcie nauki
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%" width="200"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="subtytuly">
+                                <td>Platformy UX</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>UXPin</strong> - poziom podstawowy
+                                </td>
+                                <td>
+                                    <strong>Axure</strong> - poziom podstawowy
+                                </td>
+                            </tr>
+                            <tr >
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="subtytuly">
+                                <td>Języki obce</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Język angielski</strong> - poziom C1 w mowie i w piśmie
+                                </td>
+                                <td><strong>Język niemiecki</strong> - poziom A2 w mowie i w piśmie
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:83%" width="200"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w3-white w3-round-large" style="width:200px">
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%" width="200"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <!-- początek footera -->
                 <footer class="glowny-ftr">
@@ -221,6 +279,5 @@ and open the template in the editor.
                     </table>
                 </footer>
             </div>
-        </div>
     </body>
 </html>
