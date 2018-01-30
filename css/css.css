@@ -15,7 +15,7 @@ h2 { font-size: 36px; }
 
 h3 { font-size: 18px; }
 
-i { color: rgb(217,217,214); margin: 10px; }
+i.fa { color: rgb(217,217,214); font-size: 16px; margin: 10px; }
 
 /* wcięcie tekstu w .profil */
 p { line-height: 1.6; text-indent: 50px; }
@@ -26,30 +26,19 @@ th {
     text-align: left;
 }
 
-.glowne a:active {
-    color: magenta;
-    background-color: transparent;
-    text-decoration: none;
-}
+.glowne a:active, a:hover, a:link, a:visited { background-color: transparent; text-decoration: none; }
 
-.glowne a:hover {
-    background-color: transparent;
-    color: rgb(85,89,93);
-    cursor: pointer;
-    text-decoration: none;
-}
+.glowne a:active { color: magenta; }
+
+.glowne a:hover { color: rgb(85,89,93); cursor: pointer; }
 
 /* styl dla linku w danych kontaktowych / link odwiedzony */
-.glowne a:link, a:visited {
-    background-color: transparent;
-    color: whitesmoke;
-    text-decoration: none;
-}
+.glowne a:link, a:visited { color: whitesmoke; }
 
-#checkform:hover { background-color: grey; color: black; }
+#btnForm:hover, #checkform:hover { background-color: grey; color: whitesmoke; }
 
 /* wygląd buttona odsłaniającego formularz */
-#checkform {
+#btnForm, #checkform {
     background-color: rgb(217,217,214);
     border: none;
     color: black;
@@ -61,15 +50,8 @@ th {
     text-decoration: none;
 }
 
-.praca ol {
-    list-style-position: outside;
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-}
-
 /* Styl dla zdjęcia w CV */
-.profil caption { /* Skalowanie zdjęcia - aspekt ratio */ object-fit: contain;}
+.profil caption { /* Skalowanie zdjęcia - aspekt ratio */ object-fit: contain; }
 
 input[type=text]:focus, input[type=number]:focus { border: 3px solid #555; background-color: rgb(217,217,214); }
 
@@ -79,15 +61,14 @@ input[type=text], input[type=number] {
     border-radius: 2px;
     /* włączenie paddingu i boardera w input (inaczej niż w property-box)*/
     box-sizing: border-box;
-    margin: 5px 0;
-    padding: 5px 10px;
+    padding: 5px;
     outline: none;
     transition: 0.25s;
     /* czas efekt przejścia (transition) efektu */
     -webkit-transition: 0.25s;
 }
 
-input[type=number] { width: 150px;}
+input[type=number] { width: 150px; }
 
 input[type=text] { width: 310px; }
 
@@ -95,40 +76,41 @@ input[type=text] { width: 310px; }
 .dane { font-size: 16px; }
 
 /* wygląd td w tabelach w klasie .doświadczenie */
-#subtytuly {
-    font: small-caps 500 20px/2.5 Alegreya Sans, sans-serif;
-    letter-spacing: 3px;
-}
+.subtytul { font: small-caps 500 20px/2.5 Alegreya Sans, sans-serif; letter-spacing: 3px; }
 
-.praca td { padding: 10px; text-align: left; vertical-align: top }
+.praca td, .wyksztalcenie td { border-spacing: 5px; text-align: left; vertical-align: top; }
 
 /* styl dla wierszy w nw. tabelach */
-.formularz, .glowne, .profil td {
-    border-spacing: 7px;
-    font: normal 300 14px/1.6 Open Sans, sans-serif;
-}
+.formularz, .glowne, .profil td { border-spacing: 10px; font: normal 300 14px/1.6 Open Sans, sans-serif; }
 
-#umiejetnosci td { width: 50%; }
+#umiejetnosci td { width: 50%; border: 1px blue solid; }
 
 #klauzula { padding: 20px; }
 
-.praca ol li { margin-left: 20px; }
+/* linia wertykalna przcinajaca tabelę na daty i zatrudnienie*/
+.b { border-left: 2px solid rgb(85,89,93); margin: 10px; width: 80%; }
 
-#b { border-left: 1px solid rgb(85,89,93); }
+.praca, .wyksztalcenie { border-collapse: collapse; width: 100%; }
 
-.praca { border-collapse: collapse; width: 100%; }
+/* wyrównanie linii zawodów i doświadczenia do brzegu td */
+.praca ol, .wyksztalcenie ol { list-style-position: outside; list-style-type: none; margin: auto; }
 
-ul.kolo { list-style-type: square; }
+ol.roman { list-style-type: decimal; }
 
-#data { text-align: center; word-spacing: 5px; }
+ul.kolo { list-style-type: circle; }
+
+td.data { text-align: center; word-spacing: 5px; width: 20%; }
 
 /* wygląd tabeli w klasie .doświadczenie */
-#umiejetnosci { line-height: 2.0; width: 100%; }
+.umiejetnosci { line-height: 2.0; width: 100%; }
 
-#stanowisko { font-size: 16px; font-weight: 600; }
+.kier, .stan { font-size: 16px; font-weight: 600; }
+
+/* tytuly kierunków i stanowisk bez punktatora */
+li.kier, li.stan { list-style-type: none; }
 
 /* styl dla drugiego stopnia zagnieżdzonej listy  */
-#zakladpracy { font-style: italic; list-style-type: none; }
+.ucz, .zaklad { font-style: italic; list-style-type: none; }
 
 /* (imię i nazwisko, rola) */
 .tytul {
@@ -160,7 +142,7 @@ ul.kolo { list-style-type: square; }
 .glowny-container {
     background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
     float: right;
-    height: auto;
+    height: 1600px;
     width: 60%;
 }
 
@@ -171,17 +153,17 @@ ul.kolo { list-style-type: square; }
     color: whitesmoke;
     /* pozycjonowanie */
     float: left;
-    height: auto;
+    height: 1600px;
     width: 40%;
 }
-
+.progress { width: 200px; }
 .container {
     /* kolor kartki */
     background-color: #fff;
     /* border: border-width, border-style, corder-color */ 
     border: thin outset rgb(217,217,214);
     font: 14px/1.6 Open Sans, sans-serif;
-    height: auto;
+    height: 1600px;
     margin: 6em 4.68em;
     /* Generator cienia */
     box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
