@@ -8,12 +8,11 @@ and open the template in the editor.
 <html lang="pl">
     <head>
         <!-- połączenie z css i js -->
-        <link href="css/css.css" rel="stylesheet" type="text/css" />
         <!-- Tytuł strony -->
         <title>CV - Angela Słoma</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- określenie autora strony www-->
+        <!-- określenie autora strony www -->
         <meta name="Author" content="Angela Słoma" />
         <!-- określenie narzędzia autorskiego -->
         <meta name="Authoring_tool" content="NetBeans IDE 8.2" />
@@ -29,6 +28,7 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&amp;subset=latin-ext" rel="stylesheet">
         <!-- pobranie stylesheet dla progress bar w tabeli "umiejętności" -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -39,21 +39,21 @@ and open the template in the editor.
                 <div class="lewy-container">
                     <table class="profil">
                         <caption>
-                            <img src="zdjecia/CV.zdjecie.png" alt="zdjęcie" width="200" height="250" title="zdjęcie"/>
+                            <img id="imgCV" />
                         </caption>
                         <tr>
                             <th>Profil</th>
                         </tr>
                         <tr>
                             <td>
-                                <p id="p1"></p>
+                                <p id="opis"></p>
                             </td>
                         </tr>
                     </table>
                     <br>
                     <table class="glowne">
                         <tr><th colspan="2">Dane kontaktowe</th></tr>
-                        <tr><td><i class="fa fa-map-marker" style="font-size:16px"></i> Miejsce zamieszkania</td>
+                        <tr><td><i class="fa fa-map-marker"></i> Miejsce zamieszkania</td>
                             <td class="dane miejscezam">ul. Głowackiego 164 m. 25,
                                 <br>16-100 Sokółka
                             </td></tr>
@@ -61,13 +61,13 @@ and open the template in the editor.
                             <td class="dane mail"><a href="mailto:angela.sloma@gmail.com">angela.sloma@gmail.com</a>
                             </td></tr>
                         <tr><td>
-                                <i class="fa fa-phone" style="font-size:16px"></i> Telefon</td>
+                                <i class="fa fa-phone"></i> Telefon</td>
                             <td class="dane telefon">724 495 595
                             </td></tr>
-                        <tr><td><i class="fa fa-linkedin" style="font-size:16px"></i> LinkedIn</td>
+                        <tr><td><i class="fa fa-linkedin"></i> LinkedIn</td>
                             <td class="dane linkedin"><a target="_blank" href="https://www.linkedin.com/in/angela-s%C5%82oma-476994120/">angelasloma</a>
                             </td></tr>
-                        <tr><td><i class="fa fa-github" style="font-size:16px"></i> Github</td>
+                        <tr><td><i class="fa fa-github"></i> Github</td>
                             <td class="dane github"><a href="https://github.com/angelasloma">angelasloma</a>
                             </td></tr>
                     </table>
@@ -81,7 +81,6 @@ and open the template in the editor.
                             <td><button onclick="Show()" id="btnForm">Wypełnij</button></td>
                         </tr>
                     </table>
-
                     <!-- "_self", gdzie wartość formularza zostaje wprowadzona w bieżącym oknie; 
         metoda "post" by ukryć wartości w url wprowadzone przez użytkownika -->
                     <form id="form1" style="display:none;" action="/action_page.php" target="_self" method="POST">
@@ -121,13 +120,13 @@ and open the template in the editor.
                                             </ul></ul></ol>
                                 </td></tr>
                             <tr><td class="data 2">04.2017 – 09.2017</td>
-                                <td class="b 2"><ol><li class="stan 2">Pomoc administracyjna</li>
+                                <td class="b 2"><ul><li class="stan 2">Pomoc administracyjna</li>
                                         <ul><li class="zaklad 2">Powiatowy Urząd Pracy w Sokółce</li>
                                             <ul class="roman 2">
                                                 <li>obsługa programu Syriusz Std</li>
                                                 <li>prowadzenie ksiąg rachunkowych</li>
                                                 <li>naliczanie i ewidencjonowanie płac i operacji finansowych</li>
-                                            </ul></ul></ol>
+                                            </ul></ul></ul>
                                 </td>
                             </tr>
                             <tr><td class="data 3">10.2016 - 04.2017</td>
@@ -182,20 +181,20 @@ and open the template in the editor.
                                     <strong>HTML5 / CSS3</strong> - w trakcie nauki
                                     <br>
                                     <div class="progress 1">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
+                                        <div classs="w3-container w3-dark-grey w3-round-large" stylesheet="height:10px;width:25%"></div>
                                     </div>
                                 </td>
                                 <td rowspan="2"><strong>JavaScript</strong> - w trakcie nauki
                                     <br>
                                     <div class="progress 2">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
+                                        <div id="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
                                     </div>
                                 </td>
                                 <td rowspan="2">
                                     <strong>SQL</strong> - w trakcie nauki
                                     <br>
                                     <div class="progress 3">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
+                                        <div id="w3-container w3-dark-grey w3-round-large" style="height:10px;width:25%"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -208,14 +207,14 @@ and open the template in the editor.
                                     <strong>UXPin</strong> - poziom podstawowy
                                     <br>
                                     <div class="progress 4">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:15px;width:33%"></div>
                                     </div>
                                 </td>
                                 <td colspan="2">
                                     <strong>UXPin</strong> - poziom podstawowy
                                     <br>
                                     <div class="progress 5">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                        <div id="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -227,14 +226,14 @@ and open the template in the editor.
                                     <strong>Język angielski</strong> - poziom C1 w mowie i w piśmie
                                     <br>
                                     <div class="progress 6">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:83%"></div>
+                                        <div id="w3-container w3-dark-grey w3-round-large" style="width:83%"></div>
                                     </div>
                                 </td>
                                 <td colspan="2" rowspan="2">
                                     <strong>Język niemiecki</strong> - poziom A2 w mowie i w piśmie
                                     <br>
                                     <div class="progress 7">
-                                        <div class="w3-container w3-dark-grey w3-round-large" style="height:10px;width:33%"></div>
+                                        <div id="w3-container w3-dark-grey w3-round-large" style="width:33%"></div>
                                     </div>
                                 </td>
                             </tr>
@@ -251,5 +250,7 @@ and open the template in the editor.
                 </footer>
             </div>
         </div>
+        <!-- osadzenie JS -->
+        <script src="JS/javascript.js" type="text/javascript"></script>
     </body>
 </html>

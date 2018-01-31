@@ -30,9 +30,9 @@ th { font: small-caps 600 26px/2.5 'Alegreya Sans', sans-serif; letter-spacing: 
 .glowne a:hover { color: rgb(85,89,93); cursor: pointer; }
 
 /* styl dla linku w danych kontaktowych / link odwiedzony */
-.glowne a:link, a:visited { color: #E5E1E6; }
+.glowne a:link, a:visited { color: rgb(229, 225, 230); }
 
-#btnForm:hover, #btnWyslij:hover { background-color: grey; color: #E5E1E6; }
+#btnForm:hover, #btnWyslij:hover { background-color: grey; color: rgb(229, 225, 230); }
 
 /* wygląd buttona odsłaniającego formularz */
 #btnForm, #btnWyslij {
@@ -46,6 +46,9 @@ th { font: small-caps 600 26px/2.5 'Alegreya Sans', sans-serif; letter-spacing: 
     text-align: center;
     text-decoration: none;
 }
+
+/* zdjęcie do CV */
+#imgCV { width: 50%; }
 
 input[type=text]:focus, input[type=number]:focus { border: 3px solid #555; background-color: rgb(217,217,214); }
 
@@ -146,7 +149,7 @@ li.kier, li.stan { list-style-type: none; }
 .glowny-hdr {
     /* tekstura czarnego tła kartki w url + kafelkowanie typu round likwidujące whitespace */
     background: rgb(39, 37, 31) url(https://images.freecreatives.com/wp-content/uploads/2016/01/Black-Construction-Paper-Texture..jpg) round left top;
-    color: #E5E1E6;
+    color: rgb(229, 225, 230);
     /* pozycjonowanie */
     float: left;
     height: 1600px;
@@ -157,7 +160,7 @@ li.kier, li.stan { list-style-type: none; }
 
 .container {
     /* kolor kartki */
-    background-color: #fff;
+    background-color: rgb(229, 225, 230);
     /* border: border-width, border-style, corder-color */ 
     border: thin outset rgb(217,217,214);
     font: 14px/1.6 'Open Sans', sans-serif;
