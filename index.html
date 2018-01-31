@@ -6,8 +6,10 @@ and open the template in the editor.
 -->
 <!-- określenie języka strony www -->
 <html lang="pl">
-
     <head>
+        <!-- połączenie z css i js -->
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+        <script src="JS/javascript.js"></script>
         <!-- Tytuł strony -->
         <title>CV - Angela Słoma</title>
         <meta charset="UTF-8">
@@ -28,9 +30,6 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&amp;subset=latin-ext" rel="stylesheet">
         <!-- pobranie stylesheet dla progress bar w tabeli "umiejętności" -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <!-- połączenie z css i js -->
-        <link href="css/css.css" rel="stylesheet" type="text/css" />
-        <script src="JS/javascript.js"></script>
     </head>
 
     <body>
@@ -48,10 +47,7 @@ and open the template in the editor.
                         </tr>
                         <tr>
                             <td>
-                                <p>Po zakończeniu studiów magisterskich na kierunku ekonomiczno - prawnym w Uniwersytecie w Białymstoku
-                                    zostałam stażystką w Powiatowym Urzędzie Pracy w Sokółce.
-                                    Aktualnie nie tylko pracuję w ww. urzędzie, ale także jestem słuchaczem studiów podyplomowych pn. Aplikacje Internetowe – Front-End
-                                    Development na Politechnice Białostockiej.</p>
+                                <p id="p1"></p>
                             </td>
                         </tr>
                     </table>
@@ -82,11 +78,11 @@ and open the template in the editor.
                         <tr>
                             <th>Formularz kontaktowy</th>
                         </tr>
+                        <tr>
+                            <td><button onclick="Show()" id="btnForm">Wypełnij</button></td>
+                        </tr>
                     </table>
-                    <br>
-                    <!-- wyrównać button - center -->
-                    <button onclick="Show()" id="btnForm">Wypełnij</button>
-                    <br>
+
                     <!-- "_self", gdzie wartość formularza zostaje wprowadzona w bieżącym oknie; 
         metoda "post" by ukryć wartości w url wprowadzone przez użytkownika -->
                     <form id="form1" style="display:none;" action="/action_page.php" target="_self" method="POST">
@@ -98,7 +94,7 @@ and open the template in the editor.
                             <p><input type="number" name="kodp" min="10" max="99" placeholder="Kod" required> - <input type="number" name="kodp" min="100" max="999" placeholder="pocztowy" required></p>
                             <p><input type="text" name="miasto" id="miasto" placeholder="Miasto" required></p>
                             <p><label><input type="checkbox" id="myCheck" onclick="checkFunction()"> Wyrażam zgodę na otrzymywanie newslettera.</label></p>
-                            <p><button type="button" id="checkform" onclick="Wyslij()">Wyślij</button></p>
+                            <p><button type="button" id="btnWyslij" onclick="Wyslij()">Wyślij</button></p>
                         </fieldset></form>
                 </div>
             </header>
