@@ -10,48 +10,27 @@ and open the template in the editor.
 
 /* Szare tło pojawiające się za "kartką" */
 body { background-color: rgb(217,217,214);}
-
-h2 { font-size: 36px; }
-
-h3 { font-size: 18px; }
-
-/* klasa ikon */
-.fa { color: rgb(217,217,214); font-size: 16px; margin: 10px; }
-
-/* wcięcie tekstu w .profil */
-p { line-height: 1.6; text-indent: 50px; }
-
-th { font: small-caps 600 26px/2.5 'Alegreya Sans', sans-serif; letter-spacing: 4px; text-align: left; }
-
-.glowne a:active, a:hover, a:link, a:visited { background-color: transparent; text-decoration: none; }
-
-.glowne a:active { color: magenta; }
-
-.glowne a:hover { color: rgb(85,89,93); cursor: pointer; }
-
-/* styl dla linku w danych kontaktowych / link odwiedzony */
-.glowne a:link, a:visited { color: rgb(229, 225, 230); }
-
-#btnForm:hover, #btnWyslij:hover { background-color: grey; color: rgb(229, 225, 230); }
-
-/* wygląd buttona odsłaniającego formularz */
-#btnForm, #btnWyslij {
-    background-color: rgb(217,217,214);
-    border: none;
+button {
     color: black;
     cursor: pointer;
+    background-color: rgb(217,217,214);
+    border: none;
     font-size: 14px;
     height: 35px;
-    width: 150px;
     text-align: center;
     text-decoration: none;
+    width: 150px;
 }
+h2 { font-size: 36px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+/* wcięcie tekstu w .profil */
+p { line-height: 1.6; text-indent: 50px; }
+textarea { resize: vertical; }
+th { font: small-caps 600 26px/2.5 'Alegreya Sans', sans-serif; letter-spacing: 4px; text-align: left; }
+button:hover { background-color: grey; color: rgb(229, 225, 230); }
 
-/* zdjęcie do CV */
-#imgCV { width: 50%; }
-
-input[type=text]:focus, input[type=number]:focus { border: 3px solid #555; background-color: rgb(217,217,214); }
-
+/* wygląd pól w formularzu */
 input[type=text], input[type=number] {
     border: 1px solid rgb(85,89,93);
     /* zaokrąglenie boxa */
@@ -64,51 +43,54 @@ input[type=text], input[type=number] {
     /* czas efekt przejścia (transition) efektu */
     -webkit-transition: 0.25s;
 }
-
 input[type=number] { width: 150px; }
-
 input[type=text] { width: 310px; }
+input[type=text]:focus, input[type=number]:focus { border: 3px solid #555; background-color: rgb(217,217,214); }
 
-/* styl dla danych osobowych w <td> po prawej stronie */
-.dane { font-size: 16px; }
-
-/* wygląd td w tabelach w klasie .doświadczenie */
-.subtytul { font: small-caps 500 20px/2.5 'Alegreya Sans', sans-serif; letter-spacing: 3px; }
-
-.praca td, .wyksztalcenie td { border-spacing: 5px; text-align: left; vertical-align: top; }
-
-/* styl dla wierszy w nw. tabelach */
-.formularz, .glowne, .profil td { border-spacing: 10px; font: normal 300 14px/1.6 'Open Sans', sans-serif; }
-
-#umiejetnosci td { width: 50%; border: 1px blue solid; }
-
-#klauzula { padding: 20px; }
-
-/* linia wertykalna przcinajaca tabelę na daty i zatrudnienie*/
-.b { border-left: 2px solid rgb(85,89,93); margin: 10px; width: 80%; }
-
-.praca, .wyksztalcenie { border-collapse: collapse; width: 100%; }
-
-/* wyrównanie linii zawodów i doświadczenia do brzegu td */
-.praca ol, .wyksztalcenie ol { list-style-position: outside; list-style-type: none; margin: auto; }
-
-ol.roman { list-style-type: decimal; }
-
-ul.kolo { list-style-type: circle; }
-
-td.data { text-align: center; word-spacing: 5px; width: 20%; }
-
-/* wygląd tabeli w klasie .doświadczenie */
-.umiejetnosci { line-height: 2.0; width: 100%; }
-
-.kier, .stan { font-size: 16px; font-weight: 600; }
-
-/* tytuly kierunków i stanowisk bez punktatora */
-li.kier, li.stan { list-style-type: none; }
-
-/* styl dla drugiego stopnia zagnieżdzonej listy  */
-.ucz, .zaklad { font-style: italic; list-style-type: none; }
-
+/* wygląd buttona odsłaniającego formularz, poza #btnWyslij */
+.container {
+    /* kolor kartki */
+    background-color: rgb(229, 225, 230);
+    /* border: border-width, border-style, corder-color */ 
+    border: thin outset rgb(217,217,214);
+    font: 14px/1.6 'Open Sans', sans-serif;
+    height: 1800px;
+    margin: 6em 4.68em;
+    /* Generator cienia */
+    box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+    -moz-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+    -webkit-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
+}
+/* klasa w footerze */
+.glowny-ftr {
+    float: bottom;
+    /* font-style, font-style, font-weight, font-size/line-height, font-family */
+    font: italic normal 10px/1.75 'Open Sans', sans-serif;
+    height: auto;
+    opacity: 0.75;
+    position: absolute;
+    text-align: justify;
+    width: 55%;
+}
+/* styl nadany dla głowych informacji w CV */
+.glowny-hdr {
+    /* tekstura czarnego tła kartki w url + kafelkowanie typu round */
+    background: rgb(39, 37, 31) url(https://images.freecreatives.com/wp-content/uploads/2016/01/Black-Construction-Paper-Texture..jpg) round left top;
+    color: rgb(229, 225, 230);
+    /* pozycjonowanie */
+    float: left;
+    height: 1800px;
+    width: 40%;
+}
+/* wygląd dla divów i tabel po obu stronach "kartki" */ 
+.lewy-container, .prawy-container { margin: 10px; padding: 20px; }
+/* wygląd divów - prawej strony "kartki" */
+.glowny-container {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
+    float: right;
+    height: 1800px;
+    width: 60%;
+}
 /* (imię i nazwisko, rola) */
 .tytul {
     font: small-caps normal 'Open Sans', sans-serif;
@@ -118,56 +100,64 @@ li.kier, li.stan { list-style-type: none; }
     /* zmiana tekstu na kapitaliki */
     text-transform: uppercase;
 }
-
 /* styl dla tabel po lewej stronie */
+.glowne, .profil { text-align: justify; }
 .formularz, .glowne, .profil { width: 100%;}
 .formularz { text-align: center }
-.glowne, .profil { text-align: justify; }
+/* wygląd tabel w klasie .dowiadczenie */
+.praca, .wyksztalcenie { border-collapse: collapse; width: 100%; }
+.umiejetnosci { line-height: 2.0; width: 100%; }
 
-.glowny-ftr {
-    float: bottom;
-    /* font-style, font-style, font-weight, font-size/line-height, font-family */
-    font: italic normal 10px/1.75 'Open Sans', sans-serif;
-    height: auto;
-    opacity: 0.75;
-    text-align: justify;
-    width: 100%;
+/* linia wertykalna przcinajaca tabelę na daty i zatrudnienie*/
+.b { border-left: 2px solid rgb(85,89,93); margin: 10px; width: 80%; }
+/* klasa ikon */
+.fa { color: rgb(217,217,214); font-size: 16px; margin: 10px; }
+/* styl dla danych osobowych w <td> po prawej stronie */
+.dane { font-size: 16px; }
+.stan { font-size: 16px; font-weight: 600; }
+/* wygląd <td> w tabelach w klasie .doświadczenie */
+.subtytul { font: small-caps 500 20px/2.5 'Alegreya Sans', sans-serif; letter-spacing: 3px; }
+/* styl dla drugiego stopnia zagnieżdzonej listy  */
+.zaklad { font-style: italic; list-style-type: none; }
+
+.glowne a { background-color: transparent; text-decoration: none; }
+.glowne a:active { color: magenta; }
+.glowne a:hover { color: rgb(85,89,93); cursor: pointer; }
+/* styl dla linku w danych kontaktowych / link odwiedzony */
+.glowne a:link, a:visited { color: rgb(229, 225, 230); }
+/* Czerwony tekst i znak "x" w przypadku źle wypełnionego formularza */
+.valid { color: green; }
+.valid:before { content: "✔"; left: -35px; position: relative; }
+/* tytuly kierunków i stanowisk bez punktatora */
+li.stan { list-style-type: none; }
+/* wyrównanie linii zawodów i doświadczenia do brzegu td */
+.praca ol, .wyksztalcenie ol { list-style-position: outside; list-style-type: none; margin: auto; }
+ol.roman { list-style-type: decimal; }
+/* styl dla wierszy w nw. tabelach */
+.formularz, .glowne, .profil td { border-spacing: 10px; font: normal 300 14px/1.6 'Open Sans', sans-serif; }
+.praca td, .wyksztalcenie td { border-spacing: 5px; text-align: left; vertical-align: top; }
+td.data { text-align: center; word-spacing: 5px; width: 20%; }
+/* Czerwony tekst i znak "x" w przypadku źle wypełnionego formularza */
+.invalid { color: red; }
+.invalid:before { content: "✖"; left: -35px; position: relative; }
+.w3-white { width: 200px; }
+
+/* Walidacja - wiadomość pojawiająca się pod formularzem */
+#wiadomoscnaz, #wiadomoscimie, #checktekst, p.danesub {
+    background: transparent;
+    color: rgb(217,217,214);
+    display: none;
+    position: relative;
+    padding: 10px;
+    margin: 5px;
 }
-
-/* wygląd dla divów i tabel po obu stronach "kartki" */ 
-.lewy-container, .prawy-container { margin: 10px; padding: 20px; }
-
-/* wygląd divów - prawej strony "kartki" */
-.glowny-container {
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png);
-    float: right;
-    height: 1600px;
-    width: 60%;
-}
-
-/* styl nadany dla głowych informacji w CV */
-.glowny-hdr {
-    /* tekstura czarnego tła kartki w url + kafelkowanie typu round likwidujące whitespace */
-    background: rgb(39, 37, 31) url(https://images.freecreatives.com/wp-content/uploads/2016/01/Black-Construction-Paper-Texture..jpg) round left top;
-    color: rgb(229, 225, 230);
-    /* pozycjonowanie */
-    float: left;
-    height: 1600px;
-    width: 40%;
-}
-
-.progress { width: 200px; }
-
-.container {
-    /* kolor kartki */
-    background-color: rgb(229, 225, 230);
-    /* border: border-width, border-style, corder-color */ 
-    border: thin outset rgb(217,217,214);
-    font: 14px/1.6 'Open Sans', sans-serif;
-    height: 1600px;
-    margin: 6em 4.68em;
-    /* Generator cienia */
-    box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
-    -moz-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
-    -webkit-box-shadow: 15px 15px 30px 10px rgba(36,36,36,1);
-}
+/* button znajdujący się w formularzu po prawej stronie */
+#btnWyslij { background-color: gray; color: rgb(217,217,214); }
+#btnWyslij:hover { background-color: rgb(217,217,214); color: black; }
+#btnWyksztalcenie { width: 300px; }
+/* zdjęcie do CV */
+#imgCV { width: 50%; }
+#klauzula { padding: 20px; }
+/* tekst pojawiający się pod formulazem - walidacja */
+#danesub, #checktekst, #wiadomoscnaz, #wiadomoscimie p { font-size: 14px; padding: 10px; }
+#umiejetnosci td { width: 50%; }
